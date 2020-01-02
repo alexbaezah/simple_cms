@@ -12,4 +12,7 @@
 <% end %> 
 
 <%= link_to("ir a hello", demo_hello_path) %><br />
-<%= link_to("ir a google", {:controller => 'demo', :action => "google"} ) %> 
+<%= link_to("ir a google", {:controller => 'demo', :action => "google"} ) %> <br /> 
+
+<%= link_to("hello with parameters", {:action => "hello", :page => 5, :id => 20}) %>
+

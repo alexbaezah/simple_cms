@@ -1,3 +1,12 @@
 <h1>hola mundo, desde hello.html</h1>
 
 <%= link_to("ir a index", demo_index_path) %>
+
+<br /> 
+
+ID: <%= @id %><br /> 
+ID: <%= params[:id] %><br/> 
+page: <%= @page %><br/> 
+
+next page: <%= @page.to_i + 1 %> 
+
