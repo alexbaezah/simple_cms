@@ -1,1 +1,15 @@
 <h1> hola mundo, desde vista index.html.erb </h1>
+
+<%= 1+1 %><br />
+
+<% target = "world" %> 
+
+<%= "Hello #{target}" %> 
+<br /> 
+
+<% 3.times do |n| %> 
+    <%= n %><br /> 
+<% end %> 
+
+<%= link_to("ir a hello", demo_hello_path) %><br />
+<%= link_to("ir a google", {:controller => 'demo', :action => "google"} ) %> 
