@@ -5,3 +5,13 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+array = []
+list = ["first", "second", "third", "fourth", "fifth"]
+1..100.times do |pos|
+    Subject.create(:position => pos + 1 
+end
+
+
+list.each do |name| 
+    Subject.create( :name => name) 
+end
