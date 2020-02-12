@@ -1,0 +1,24 @@
+<table summary="Subject detail" %> 
+    <tr> 
+        <th> name </th>
+        <td> <%= @subject.name %> </td>
+    </tr>
+    <tr> 
+        <th> position </th>
+        <td> <%= @subject.position %> </td> 
+    </tr>
+    <tr> 
+        <th> Visible? </th>
+        <td> <%= @subject.visible ? 'true' : 'false' %> </td>
+    </tr>
+    <tr> 
+        <th> created </th>
+        <td> <%= @subject.created_at %> </td>
+    </tr>
+    <tr>
+        <th> updated </th> 
+        <td> <%= @subject.updated_at %> </td>
+    </tr>
+</table>
+
+<%= link_to("volver", subjects_path) %>

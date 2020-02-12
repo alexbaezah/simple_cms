@@ -1,0 +1,41 @@
+<% if !flash[:notice].blank? %>
+    <div class="notice"%> 
+        <%= flash[:notice] %>
+    </div>
+<% end%> 
+
+<%= link_to("Volver a la lista", subjects_path, :class => "back-link") %>
+
+<div class="subject news"> 
+    <h2> Create subject </h2>
+
+    <%= form_for @subject do |f| %>
+
+    <table summary="subject form fields" > 
+        <tr> 
+            <th>name </th> 
+            <td><%= f.text_field :name %>  </td>
+
+        </tr>
+        <tr> 
+            <th>Position</th>
+             <td><%= f.text_field :position %></td>
+        </tr>
+        <tr>
+            <th>Visible</th>
+            <td><%= f.text_field :visible %> </td>
+        </tr>
+
+    </table>
+
+    <div class="form buttons">
+        <%= f.submit "crear subject" %> 
+
+    </div>
+
+    
+    
+    
+</div>
+   
+<% end %>
